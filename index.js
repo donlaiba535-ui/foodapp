@@ -9,7 +9,7 @@ const users = [
     },
     {
         id:2,
-        username: "laiba",
+        username: "",
         password: "4321",
         balance: 2222,
     },

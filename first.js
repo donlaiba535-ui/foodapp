@@ -36,3 +36,6 @@ fetch('https://fakestoreapi.com/products')
   .catch(err => {
     console.error("Error fetching products:", err);
   });
+
+
+  
