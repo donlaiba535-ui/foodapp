@@ -1,0 +1,22 @@
+{
+  "name": "fghjk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donlaiba535-ui/foodapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donlaiba535-ui/foodapp/issues"
+  },
+  "homepage": "https://github.com/donlaiba535-ui/foodapp#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
