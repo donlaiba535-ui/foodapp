@@ -22,3 +22,6 @@ function createCalendar(month) {
 
 select.value = "January";
 createCalendar("January");
+
+
+

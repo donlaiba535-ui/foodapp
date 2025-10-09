@@ -1,4 +1,7 @@
 console.log("atm")
+import readlineSync from "readline-sync";
+const q = readlineSync.question; 
+
 
 const users = [
     {
@@ -19,9 +22,9 @@ const users = [
         password: "1111",
         balance: 1111,
     },
-]
-(async () => {
-    let id = +await q("ID: ");
+];
+(() => {
+    let id = +q("ID: ");
     let user = users.find(x => x.id === id);
 
     if (!user) {
@@ -29,7 +32,7 @@ const users = [
         return rl.close();
     }
 
-    let pass = await q("Password: ");
+    let pass =  q("Password: ");
     if (pass !== user.password) {
         console.log("Wrong password");
         return rl.close();
@@ -38,7 +41,7 @@ const users = [
     console.log(`Welcome ${user.username}`);
 
     while (true) {
-        let opt = await q("1 - Balance  2 - Exit: ");
+        let opt =  q("1 - Balance  2 - Exit: ");
         if (opt === "1") {
             console.log("Balance:", user.balance);
         } else {
@@ -46,5 +49,5 @@ const users = [
         }
     }
 
-    rl.close();
+    q.close();
 })();
