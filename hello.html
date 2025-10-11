@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="hello.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <input type="text" id="display" class="display" readonly>
+        <table>
+            <tr>
+                <td onclick="press('9')">9</td>
+                <td onclick="press('8')">8</td>
+                <td onclick="press('7')">7</td>
+                <td onclick="press('+')">+</td>
+              </tr>
+              <tr>
+                <td onclick="press('6')">6</td>
+                <td onclick="press('5')">5</td>
+                <td onclick="press('4')">4</td>
+                <td onclick="press('*')">*</td>
+              </tr>
+              <tr>
+                <td onclick="press('3')">3</td>
+                <td onclick="press('2')">2</td>
+                <td onclick="press('1')">1</td>
+                <td onclick="press('/')">/</td>
+              </tr>
+              <tr>
+                <td onclick="press('0')">0</td>
+                <td onclick="press('00')">00</td>
+                <td onclick="press('-')">-</td>
+                <td onclick="calculate()">=</td>
+              </tr>
+              <tr>
+                <td colspan="4" onclick="clearDisplay()">C</td>
+              </tr>
+        </table>
+        </div>
+        <script src="hello.js"></script>
+    </body>
+</html>
